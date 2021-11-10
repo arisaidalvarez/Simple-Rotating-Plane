@@ -45,6 +45,9 @@ public class SimpleRotatingPlane extends JFrame implements ActionListener {
 			
 			RotY.main(null);
 		
+		} else if (source == xRot) {
+			
+			RotX.main(null);
 		}
 	
 	}
