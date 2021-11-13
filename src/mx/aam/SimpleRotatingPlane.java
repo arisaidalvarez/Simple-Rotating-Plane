@@ -6,13 +6,13 @@ import java.awt.event.*;
 
 public class SimpleRotatingPlane extends JFrame implements ActionListener {
 	
-	private JButton xRot, yRot, xyRot;
+	private JButton xRot, yRot, yRotXZView;
 	private JLabel rotation;
 	
 	public static void main(String[] args) {
 		
 		SimpleRotatingPlane frame = new SimpleRotatingPlane();
-		frame.setSize(450, 100);
+		frame.setSize(500, 100);
 		frame.createGUI();
 		frame.setVisible(true);
 	
@@ -31,9 +31,9 @@ public class SimpleRotatingPlane extends JFrame implements ActionListener {
 		yRot = new JButton("y Axis");
 		window.add(yRot);
 		yRot.addActionListener(this);
-		xyRot = new JButton("x & y Axis");
-		window.add(xyRot);
-		xyRot.addActionListener(this);
+		yRotXZView = new JButton("y Axis XZ view");
+		window.add(yRotXZView);
+		yRotXZView.addActionListener(this);
 		
 	}
 	
@@ -48,6 +48,11 @@ public class SimpleRotatingPlane extends JFrame implements ActionListener {
 		} else if (source == xRot) {
 			
 			RotX.main(null);
+			
+		} else if (source == yRotXZView ) {
+			
+			RotYViewXZ.main(null);
+			
 		}
 	
 	}

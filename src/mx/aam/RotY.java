@@ -34,7 +34,7 @@ public class RotY extends JFrame implements ActionListener {
 
 	private void createGUI() {
 
-		setDefaultCloseOperation(EXIT_ON_CLOSE);
+		setDefaultCloseOperation(HIDE_ON_CLOSE);
 		Container window = getContentPane();
 		window.setLayout(new FlowLayout());
 		label = new JLabel("Rotation about Y axis:");
